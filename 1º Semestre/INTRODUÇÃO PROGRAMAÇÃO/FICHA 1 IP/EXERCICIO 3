@@ -1,0 +1,27 @@
+#1 - Mostrar mensagem
+
+print('Vou pedir-lhe dois números')
+
+
+#2 - Pedir dois numeros
+
+x = eval(input('Escreva o primeiro número, x ='))
+y = eval(input('Escreva o segundo número, y ='))
+
+
+#3 - Calcular os dados
+
+
+resultado= (x  + 3 * y) * (x - y)
+
+
+#4 Mostrar o resultado
+
+print('O valor de (x + 3 * y) * (x - y) é:',resultado)
+
+
+
+
+
+
+

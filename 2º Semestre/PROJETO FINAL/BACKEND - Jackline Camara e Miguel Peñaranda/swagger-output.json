@@ -1,0 +1,841 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PROJETO BACKEND",
+    "description": "PROJETO BACKEND Swagger",
+    "version": "1.0.0"
+  },
+  "host": "backendprojectapimj.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/account/": {
+      "get": {
+        "description": "Obtem toda a informação do usuario que se encontra logeado",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/account/user": {
+      "post": {
+        "description": "Criação de um usuario na tabela users",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstname": {
+                  "example": "David"
+                },
+                "lastname": {
+                  "example": "Jardim"
+                },
+                "bornDate": {
+                  "example": "1970-03-03"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "description": "Atualiza a informação de um usuario, usando como parametro o seu id",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstname": {
+                  "example": "Jacky"
+                },
+                "lastname": {
+                  "example": "Camara"
+                },
+                "bornDate": {
+                  "example": "2004-10-22"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/account/signup": {
+      "post": {
+        "description": "Criação de uma conta na tabela accounts",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "example@gmail.com"
+                },
+                "password": {
+                  "example": "******"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/account/login": {
+      "post": {
+        "description": "Permite o Acceso a uma conta (autenciação de uma conta)",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "example@gmail.com"
+                },
+                "password": {
+                  "example": "******"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/account/updatePassword": {
+      "put": {
+        "description": "Atualiza a password de uma conta",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "oldPassword": {
+                  "example": "passeAntiga"
+                },
+                "newPassword": {
+                  "example": "passeNova"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/landingpage/counter": {
+      "get": {
+        "description": "Obtem a quantidade de pegadas de carbono reduzidas",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/landingpage/transports": {
+      "get": {
+        "description": "Listar os tipos de transportes",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/landingpage/diets": {
+      "get": {
+        "description": "Listar os tipos de dieta",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/landingpage/gasValues": {
+      "get": {
+        "description": "Listar os preços estimados em gasto mensual de gas",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/landingpage/electricityValues": {
+      "get": {
+        "description": "Listar os preços estimados em gasto mensual de electricidade",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/landingpage/historial": {
+      "get": {
+        "description": "Obtem o historial das pegadas de carbono calculadas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/calculator/habits": {
+      "post": {
+        "description": "Criação de habitos alimenticios de um usuario na tabela",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "localProducts": {
+                  "example": "Sim"
+                },
+                "typeDiet": {
+                  "example": "Omnivoro"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "description": "Atualização de habitos alimenticios de um usuario na tabela",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "localProducts": {
+                  "example": "Sim"
+                },
+                "typeDiet": {
+                  "example": "Omnivoro"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/calculator/home": {
+      "post": {
+        "description": "Inserção de informação sobre os habitos de o hogar do usuario",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "amountPeople": {
+                  "example": "3"
+                },
+                "sizeHome": {
+                  "example": "90"
+                },
+                "recycling": {
+                  "example": "Não"
+                },
+                "consumptionsGas": {
+                  "example": "Entre 70 e 80 euros..."
+                },
+                "consumptionsElectricity": {
+                  "example": "Entre 30 e 40 euros..."
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "description": "Atualização da informação sobre os habitos de o hogar do usuario",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "amountPeople": {
+                  "example": "4"
+                },
+                "sizeHome": {
+                  "example": "120"
+                },
+                "recycling": {
+                  "example": "Sim"
+                },
+                "consumptionsGas": {
+                  "example": "Entre 90 e 100 euros..."
+                },
+                "consumptionsElectricity": {
+                  "example": "Entre 50 e 60 euros..."
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/calculator/transport": {
+      "post": {
+        "description": "Inserção sobre os habitos de transporte do usuario",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "distanceTraveled": {
+                  "example": "700"
+                },
+                "typeTransport": {
+                  "example": "Carro"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "description": "Atualização sobre os habitos de transporte do usuario",
+        "parameters": [
+          {
+            "name": "user-id",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "distanceTraveled": {
+                  "example": "400"
+                },
+                "typeTransport": {
+                  "example": "Mota"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/admin": {
+      "get": {
+        "description": "Obtem uma lista de todas as contas existente",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "description": "O administrador consegue eliminar uma conta e tuda a informação ligada a esse usuario apartir do email",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "example@gmail.com"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Accounts": {
+        "type": "object",
+        "properties": {
+            "account_id": {
+                "type": "integer",
+                "x-primary-key": true
+            },
+            "email": {
+                "type": "string"
+            },
+            "password": {
+                "type": "string"
+            }
+        },
+        "xml": {
+            "name": "Accounts"
+        }
+    },
+    "Diet": {
+      "type": "object",
+      "properties": {
+          "diet_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "diet_type": {
+              "type": "string"
+          }
+      },
+      "xml": {
+          "name": "Diet"
+      }
+    },
+    "ElectricityConsumption": {
+      "type": "object",
+      "properties": {
+          "electricity_consumption_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "monthly_consumption": {
+              "type": "string"
+          },
+          "co2_emissions": {
+            "type": "float"
+        }
+      },
+      "xml": {
+          "name": "ElectricityConsumption"
+      }
+    },
+    "FeedingHabits": {
+      "type": "object",
+      "properties": {
+          "feedingHabits_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "local_products": {
+              "type": "boolean"
+          },
+          "co2_emissions": {
+            "type": "float"
+        }
+      },
+      "xml": {
+          "name": "FeedingHabits"
+      }
+    },
+    "GasConsumption": {
+      "type": "object",
+      "properties": {
+          "gas_consumption_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "monthly_consumption": {
+              "type": "string"
+          },
+          "co2_emissions": {
+            "type": "float"
+        }
+      },
+      "xml": {
+          "name": "GasConsumption"
+      }
+    },
+    "HistorialFootPrint": {
+      "type": "object",
+      "properties": {
+          "historial_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "totalEmissions": {
+              "type": "float"
+          }
+      },
+      "xml": {
+          "name": "HistorialFootPrint"
+      }
+    },
+    "Transport": {
+      "type": "object",
+      "properties": {
+          "transport_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "type_transport": {
+              "type": "string"
+          }
+      },
+      "xml": {
+          "name": "Transport"
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+          "user_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "firstName": {
+              "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "born_date": {
+            "type": "date"
+          }
+      },
+      "xml": {
+          "name": "User"
+      }
+    },
+    "UserHome": {
+      "type": "object",
+      "properties": {
+          "user_home_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "amount_people": {
+              "type": "integer"
+          },
+          "size": {
+            "type": "float"
+          },
+          "recycling": {
+            "type": "boolean"
+          },
+          "total_co2_emissions": {
+            "type": "float"
+          }
+      },
+      "xml": {
+          "name": "UserHome"
+      }
+    },
+    "UserTransport": {
+      "type": "object",
+      "properties": {
+          "user_transport_id": {
+              "type": "integer",
+              "x-primary-key": true
+          },
+          "distance_traveled": {
+              "type": "float"
+          },
+          "CO2_emissions": {
+            "type": "float"
+          }
+      },
+      "xml": {
+          "name": "UserTransport"
+      }
+    }
+  }
+}

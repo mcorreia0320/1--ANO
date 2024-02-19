@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    
+    <div id="app">
+       <h2>Lista de Tarefas</h2>
+       <input type="text" v-model="texto" @keyup.enter="insereTarefa(texto)">
+       <button @click="insereTarefa(texto)">Inserir</button>
+       <p>{{ erro }}</p>
+       <ul>
+            <li v-for="item in tarefas">{{item}}</li>
+       </ul>
+    </div>
+
+    <script>
+        Vue.createApp(
+            {
+                data() {
+                    return {
+                        erro: '',
+                        tarefas: [
+                            'Exercícios de HTML',
+                            'Exercicios de CSS',
+                            'Exercícios de Javascript',
+                            'Exercícios de Vuess',
+                            'Juntar tudo no Projeto 1'
+                        ]
+                    }
+                },
+                methods:{
+                    insereTarefa(item){
+                        if (item != '' && item.length >= 2) {
+                            this.tarefas.push(item)
+                            this.texto = ''
+                            this.erro = ''
+                        } else 
+                            this.erro = 'Esta em branco ou não cumpre com o minimo de caracteres'
+                    }
+                },
+            }
+        ).mount('#app')
+   </script>
+   
+</body>
+</html>

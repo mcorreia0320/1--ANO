@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA2 - HEADER</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header1">
+            <div class="com-imagem">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio suscipit aspernatur enim, saepe consectetur impedit!</h2>
+            </div>
+            <div class="sem-imagen">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio suscipit aspernatur enim, saepe consectetur impedit!</h2>
+            </div>
+        </div>
+    </div>
+<style>
+    body{
+        margin: 0;
+    }
+    .container{
+        margin: 0 auto;
+        width: 850px;
+    }
+    .header1{
+        position: relative;
+        font-family: sans-serif;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        overflow: hidden;
+        background:#1B335F;
+    }
+    .header1 .com-imagem,
+    .header1 .sem-imagen{
+        position: relative;
+        background:#1B335F;
+        overflow: hidden;
+    }
+    .header1 .com-imagem{
+        background: url(https://you-print.pt/img/DOCS/Login.PNG);
+        background-size: cover;
+    }
+    .header1 .com-imagem h2,
+    .header1 .sem-imagen h2{
+        white-space:nowrap;
+        font-size: 10em;
+        line-height: 30vh;
+        }
+    .header1 .com-imagem h2{
+        color: transparent;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: #fff;
+        left: 100%;
+        animation: animate-text 60s linear infinite;
+    }
+    .header1 .sem-imagen h2{
+        color: #fff;
+        animation: animate-text 60s linear infinite;
+    }
+    @keyframes animate-text {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{  number }} 
+            &nbsp;
+            <span>
+                <button @click="soma()">UP ↑</button>
+            </span>
+            &nbsp;
+            <span>
+                <button @click="resta()">DOWN ↓</button>
+            </span>
+        </p>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>app.mount('#app')</script>
+</body>
+</html>

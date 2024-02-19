@@ -1,0 +1,132 @@
+.carrinho-card{
+    background-color: var(--color-bg-sections);
+    border: 1px solid var(--border-card);
+    border-radius: 10px;
+    width: 65%;
+
+    h1{
+        font-style: italic;
+        color: orangered !important;
+    }
+    header{
+        border-bottom: solid 1px var(--border-card);
+    }
+
+    .fa-solid{
+        color: orangered;
+    }
+    .produtos{
+        display: grid;
+        grid-template-rows: repeat(3,100px);
+
+        .produto{
+            padding-left: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            p{
+                font-weight: bolder;
+                color: orangered;
+                text-transform: uppercase;
+                margin-bottom: 0 !important;
+
+                span{
+                    color: var( --color-texto-principal);
+                    font-weight: 500;
+                    padding-left: 1rem;
+                }
+            }
+            img{
+                object-fit: contain;
+                height: 80px;
+                width: 80px;
+                border-radius: 100%;
+                border: solid 2px orangered;
+                -webkit-transition: all .6s ease;
+                transition: .6s;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .6s;
+                }
+            }
+            
+        }
+        .produto2{
+            border-top: 1px solid orangered;
+            border-bottom: 1px solid orangered;
+        }
+        .produto3{
+            border-bottom: 1px solid orangered;
+        }
+    }
+    .payment-section{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+        text-transform: uppercase;
+        display: flex !important;
+        align-items: center;
+
+
+        p{
+            color: orangered;
+            font-weight: bolder;
+            margin-bottom: 0;
+
+            span{
+                color: var(--color-texto-principal);
+                font-weight: 500;
+                padding-left: 1.5rem;
+            }
+        }
+        button{
+            background-color: orangered;
+            border-radius: 10px;
+            border: transparent;
+            font-weight: bolder;
+            color: white;
+            -webkit-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            transition: .6s;
+            height: 100%;
+            
+            &:hover{
+                background-color: rgb(207, 55, 0);
+                transition: .6s;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+}
+@media (width < 768px) {
+    header{
+        justify-content: center;
+    }
+    .carrinho-card{
+        width: 100%;
+        height: 100%;
+    }
+    .produtos{
+        grid-template-rows: repeat(3,auto) !important ;
+
+        .produto{
+            align-items: flex-start;
+            flex-direction: column !important;
+            
+            img{
+                height: 150px !important;
+                width: 150px !important;
+            }
+        }
+    }
+    .payment-section{
+        justify-content: center;
+    }
+}

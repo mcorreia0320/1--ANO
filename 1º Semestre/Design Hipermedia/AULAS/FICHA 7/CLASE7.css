@@ -1,0 +1,54 @@
+main{
+    height: 80vh;
+    width:min(30rem, 100%);
+    background-color: var(--cor-fundo);
+    margin: 0 auto;
+    text-align: center;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: var(--size-3);
+    align-content: space-around;
+}
+body{
+    padding-top: var(--size-1);
+    margin: 0;
+    height: 100vh;
+    background-color: var(--cor-body);
+}
+.card{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--card-bg);
+    border: solid 2px black;
+    
+}
+:root{
+    --cor-body: rgb(57, 57, 125);
+    --cor-fundo: blueviolet;
+    --card-bg:rgb(199, 179, 217);
+    --card-text:black;
+    --text-color:white;
+}
+fieldset{
+    color:var(--texto-color);
+    background-color: var(--texto-color);
+}
+form{
+    margin:2rem;
+}
+:root:has(#claro:checked){
+    --cor-body: var(--gray-1);
+    --cor-fundo:var(--gray-4);
+    --card-bg:var(--gray-2);
+    --card-text:black;
+    --text-color:black;
+}
+:root:has(#Escuro:checked){
+    --cor-body: var(--gray-8);
+    --cor-fundo:var(--gray-7);
+    --card-bg:var(--gray-2);
+    --card-text:white;
+    --text-color:white;
+}

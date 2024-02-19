@@ -1,0 +1,25 @@
+#1 - Pedir dois números inteiros ao utilizador
+
+x= int(input('Escreva o primeiro número inteiro, x='))
+y= int(input('Escreva o segundo número inteiro, y='))
+
+       
+
+
+#2 - Calcular os dados
+
+a= (x+y)
+b= (x-y)
+c= (x*y)
+d= (x//y)
+e= (x%y)
+
+
+
+#3 - Mostrar resultados 
+
+print('Soma:',a)
+print('Diferença:',b)
+print('Produto:',c)
+print('Quociente:',d)
+print('Resto da divisão:',e)

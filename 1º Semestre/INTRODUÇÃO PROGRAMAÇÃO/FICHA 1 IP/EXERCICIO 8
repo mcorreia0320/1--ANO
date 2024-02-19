@@ -1,0 +1,8 @@
+#1 - Pedir ao utilizador um número entre 1 e 5
+
+a= eval(input('Introduza um número entre 1 e 5, a='))
+
+
+#2 - Estabelecer condições
+
+if

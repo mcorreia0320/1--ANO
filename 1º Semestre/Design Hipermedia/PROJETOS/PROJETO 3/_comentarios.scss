@@ -1,0 +1,130 @@
+h1{
+    color: var(--color-texto-principal) !important;
+}
+.container-testemunhos{
+    display: grid;
+    gap: 4rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(4, 15rem);
+
+    .review{
+        background-color: var(--color-bg-sections);
+        border-radius: 10px;
+        border: solid 1px var(--border-card);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .img-name{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+                height: 70px;
+                width: 70px;
+                border-radius: 100%;
+                border: solid 2px orangered;
+            }
+            h4{
+                color: orangered;
+                font-weight: bolder;
+
+                span{
+                    font-size: smaller;
+                    font-weight: 200;
+                }
+            }
+        }
+        p{
+            color: var(--color-texto-principal);
+            text-align: justify;
+        }
+    }
+}
+.card-form{
+    background-color: var(--color-bg-sections);
+    border-radius: 10px;
+    border: solid 1px var(--border-card);
+    width: 65%;
+
+    h3{
+        color: orangered;
+        text-transform: uppercase;
+    }
+    
+    .input-info{
+
+        div{
+            width: 100%;
+
+            h5{
+                color: orangered;
+                font-weight: bold;
+            }
+        }
+
+        .input-size{
+            height: 50px;
+            outline: none;
+            width: 100%;
+            color: var(--color--barra);
+            background-color: var(--color-body);
+            border: solid 1px var(--border-card);
+            border-radius: 10px;
+
+        }
+        .text-color{
+            color: #747474 !important;
+            height: 50px;
+            outline: none;
+            width: 100%;
+            background-color: var(--color-body);
+            border: solid 1px var(--border-card);
+            border-radius: 10px;
+        }
+    }
+    .input-description{
+        width: 100%;
+
+        textarea{
+            width: 100%;
+            height: 150px;
+            outline: none;
+            color: var(--color--barra);
+            border-radius: 10px;
+            border: solid 1px var(--border-card);
+            background-color: var(--color-body);
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            border-radius: 10px;
+            border: transparent;
+            font-weight: bolder;
+          }
+        .botao1{
+            background-color: orangered;
+            color: white;
+            -webkit-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            transition: .6s;
+        }
+        .botao1:hover{
+            transition: .6s;
+            color: white;
+            background-color:rgb(248, 124, 79);
+        }
+    }
+}
+@media (width < 768px) {
+    .container-testemunhos{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(8, 200px);
+    }
+    .card-form{
+        width: 100%;
+    }
+}

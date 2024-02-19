@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>Escreva um numero</p>
+        <input type="text" v-model="indice" @keyup.enter="soma(indice)">
+        <button @click="soma(indice)">Inserir</button>
+        <p>{{ somaa }}</p>
+    </div>
+
+    <script>
+        Vue.createApp(
+            {
+                data() {
+                    return {
+                        somaa: '',
+                        indice: '',
+                    }
+                },
+                methods: {
+                    soma(indice) {
+                        this.somaa = 0;
+                        for (let i = 1; i <= indice; i++) {
+                            if ( i % 3 == 0 || i % 5 == 0) {
+                                this.somaa += i
+                            }
+                        }
+                    }
+                }
+            }
+        ).mount('#app')
+    </script>
+</body>
+</html>

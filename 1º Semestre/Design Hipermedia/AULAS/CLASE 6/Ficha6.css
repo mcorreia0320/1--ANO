@@ -1,0 +1,106 @@
+.main{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "c1 c1 c2 c4"
+    "c4 c5 c5 c3"
+    ;
+}
+
+.card{
+    padding: 2rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card1{
+    background-color: blueviolet;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: white;
+    font-family: ;
+    background-image: ;
+    background-image: url('bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    border: solid 1px;
+    grid-area: c1;
+}
+.card2{
+    background-color: grey;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: white;
+    border: solid 1px;
+    grid-area: c2;
+
+    
+}
+.card3{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: grey;
+    border: solid 1px gray;
+    grid-area: c3;
+}
+.card4{
+    background-color: black;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: white;
+    border: solid 1px gray;
+    grid-area: c4;
+}
+.card5{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: grey;
+    border: solid 1px gray;
+    grid-area: c5;
+}
+
+
+
+
+.body-description{
+    font-size: 0.75rem;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+
+.header-img{
+   width: 40px;
+    border-radius: 50%;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+}
+.card-header{
+    display: flex;
+    gap: 1rem ;
+    align-items: center;
+    padding-bottom: 0.4rem;
+}
+.header-job{
+    font-size: .7 rem;
+    opacity: 0.5;
+}
+@media (max-width: 750px){
+    main{
+    grid-template-areas:
+    "c1 c2" 
+    "c3 c4"
+    "c5 c5" ;
+    }
+}
+@media (width < 400px){
+    main{
+    grid-template-areas:
+    "c1" 
+    "c2" 
+    "c3"
+    "c4"
+    "c5" ;
+    }
+}

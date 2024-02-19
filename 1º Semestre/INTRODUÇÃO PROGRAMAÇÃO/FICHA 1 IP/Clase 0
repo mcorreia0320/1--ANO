@@ -1,0 +1,14 @@
+#1 - Pedir numero ao utilizador
+
+a= eval(input('Escreva um numero, a='))
+
+#2 - Condição
+
+if a > 5 and a<10:
+    print('o numero introduzido foi:',a)
+    
+else:
+    print('Número errado')
+    
+    
+

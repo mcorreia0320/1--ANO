@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <title>FICHA 6 - 1</title>
+</head>
+<body>
+    <section class="container-cards">
+        <div class="card card1">
+            <header class="header">
+                <img src="image-daniel.jpg" alt="Daniel Clifford" width="100px" height="100px">
+                <div class="container">
+                    <h4>Daniel Clifford</h4>
+                    <p class="p-vg">Verified Graduate</p>
+                </div>
+            </header>
+            <div class="texto">
+                <h3>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.</h3>
+                <p>“ I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+            </div>
+        </div>
+        <div class=" card card2">
+            <header class="header">
+                <img src="image-jonathan.jpg" alt="Jonathan Walters" width="100px" height="100px">
+                <div class="container">
+                    <h4>Jonathan Walters</h4>
+                    <p class="p-vg">Verified Graduate</p>
+                </div>
+            </header>
+            <div class="texto">
+                <h3>The team was very supportive and kept me motivated</h3>
+                <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself. ”</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <header class="header">
+                <img src="image-kira.jpg" alt="Kira Whittle" width="100px" height="100px">
+                <div class="container">
+                    <h4 class="h4-bg">Kira Whittle</h4>
+                    <p class="p-vg">Verified Graduate</p>
+                </div>
+            </header>
+            <div class="texto">
+                <h3 class="h3-bg">Such a life-changing experience. Highly recommended!</h3>
+                <p>“ Before joining the bootcamp, I've never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I've often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+            </div>
+        </div>
+        <div class="card card4">
+            <header class="header">
+                <img src="image-jeanette.jpg" alt="Jeanette Harmon" width="100px" height="100px">
+                <div class="container">
+                    <h4 class="h4-bg">Jeanette Harmon</h4>
+                    <p class="p-vg">Verified Graduate</p>
+                </div>
+            </header>
+            <div class="texto">
+                <h3 class="h3-bg">An overall wonderful and rewarding experience</h3>
+                <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+            </div>
+        </div>
+        <div class="card card5">
+            <header class="header">
+                <img src="image-patrick.jpg" alt="Patrick Abrams" width="100px" height="100px">
+                <div class="container">
+                    <h4>Patrick Abrams</h4>
+                    <p class="p-vg">Verified Graduate</p>
+                </div>
+            </header>
+            <div class="texto">
+                <h3>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h3>
+                <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ” </p>
+            </div>
+        </div>
+    </section>
+    <style>
+        body{
+            margin: 100px;
+            background-color: rgb(213, 222, 230);
+            font-family: 'Barlow';
+        }
+        .container-cards{
+            display: grid;
+            gap: 1.5rem;
+            grid-template-areas: 
+            "c1 c1 c2 c3"
+            "c4 c5 c5 c3"
+            ;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 2%;
+            padding: 1.2rem;
+            height: 290px;
+        }
+        .card1{
+            grid-area: c1;
+            background-color: hsl(263, 55%, 52%);
+            background-image: url(bg-pattern-quotation.svg);
+            background-position: top right 10%;
+            background-repeat: no-repeat;
+            width: 600px;
+        }
+        .card2{
+            grid-area: c2;
+            width: 250px;
+            background-color: hsl(217, 19%, 35%);
+        }
+        .card3{
+            grid-area: c3;
+            width: 250px;
+            height: 634px;
+            background-color: hsl(0, 0%, 100%);
+        }
+        .card4{
+            grid-area: c4;
+            width: 250px;
+            background-color: hsl(0, 0%, 100%);
+            color: gray;
+        }
+        .card5{
+            grid-area: c5;
+            background-color: hsl(219, 29%, 14%);
+            width: 600px;
+        }
+        .header{
+            display: flex;
+            gap: 1rem;
+        }
+        p{
+            color: grey;
+            opacity: 80%;
+        }
+        h3{
+            color: white;
+            font-size: 23px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .h4-bg{
+            color:  hsl(217, 19%, 35%);
+        }
+        .h3-bg{
+            color:  hsl(217, 19%, 35%);
+        }
+        img{
+            width: 40px;
+            border-radius: 100%;
+            height: 40px;
+            border: solid 2px rgba(255, 255, 255, 0.3);
+        }
+        h4{
+            color: white;
+            margin-bottom: 0;
+        }
+        .p-vg{
+            margin-top: 4px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+        }
+        @media (width < 700px) {
+            .container-cards{
+                grid-template-areas:
+                "c1"
+                "c2"
+                "c3"
+                "c4"
+                "c5"
+                ;
+            }
+            .card{
+                width: auto;
+                height: auto;
+            }
+        }
+    </style>
+</body>
+</html>

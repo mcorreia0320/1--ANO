@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    
+    <div id="app">
+       <h2>Lista de Tarefas</h2>
+       <input type="text" v-model="texto" @keyup.enter="insereTarefa(texto)">
+       <button @click="toggleEdit()">Editar</button>
+       <p>{{ erro }}</p>
+        <ul v-if="!edit">
+            <li v-for="item in tarefas"
+                        :class="{realizada: item.realizada, prioritario: item.prioritario}"
+                        @click="realizaTarefa(item)">
+                        {{ item.nome }}</li>
+        </ul>
+        <ul v-if="edit">
+            <li v-for="item in tarefas" :class="{realizada: item.realizada, prioritario: item.prioritario}">
+                <input type="text" v-model="item.nome">
+                <input type="checkbox" v-model="item.prioritario">
+                <input type="checkbox" v-model="item.realizada">
+            </li>
+       </ul>
+    </div>
+
+    <style>
+        .realizada {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .prioritario {
+            color: red;
+        }
+    </style>
+    <script>
+        Vue.createApp(
+            {
+                setup() {
+                    const erro = Vue.ref('')
+                    const texto = Vue.ref('')
+                    const edit = Vue.ref(false)
+                    const tarefas = Vue.ref(
+                        [{
+                            nome: 'Exercicio de HTML',
+                            prioritario: false,
+                            realizada: true
+                        },
+                        {
+                            nome: 'Exercicio de CSS',
+                            prioritario: false,
+                            realizada: false
+                        },
+                        {
+                            nome: 'Exercicio de JavaScript',
+                            prioritario: false,
+                            realizada: false
+                        },
+                        {
+                            nome: 'Exercicio de VueJS',
+                            prioritario: false,
+                            realizada: false
+                        },
+                        {
+                            nome: 'Juntar tudo no Projeto 1',
+                            prioritario: false,
+                            realizada: false
+                        }
+                        ]
+                    )
+                    const insereTarefa = (item)=>{
+                        if (item != '' && item.length >= 2) {
+                            tarefas.value.push({
+                                nome: item,
+                                prioritario: false,
+                                realizada: false
+                            })
+                            erro.value = ''
+                            texto.value = ''
+                        } else 
+                            erro.value = 'Esta em branco ou não cumpre com o minimo de caracteres'
+                    }
+                    const toggleEdit = (item)=> {
+                        
+                        if (edit.value == false) {
+                            edit.value = true;
+                        }
+                        else {
+                            edit.value = false;
+                        }
+                    }
+                    const realizaTarefa = (item)=> {
+                        if (item.realizada == true) {
+                            item.realizada = false;
+                            item.prioritario = true;
+                       }
+                       else {
+                            item.realizada = true;
+                            item.prioritario = false;
+                       }
+                    }
+                    return {
+                    tarefas,
+                    texto,
+                    edit,
+                    erro,
+                    insereTarefa,
+                    toggleEdit,
+                    realizaTarefa
+                }
+                }
+            }
+        ).mount('#app')
+   </script>
+   
+</body>
+</html>

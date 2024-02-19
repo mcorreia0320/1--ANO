@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>FICHA 8 - CONTATO</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light px-0">
+                <div class="container">
+                    <a href="" class="navbar-brand">
+                        <h1>
+                            <span class="cor-principal">CONTACTO</span>
+                        </h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="FICHA 8 - HOME.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="FICHA 8 - MENU.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="FICHA 8 - ACERCA.html" class="nav-link">Acerca</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item pe-3">
+                            <a href="FICHA 8 - CONTATO.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#reservationmodal">Reservas</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="public-banner mt-5 p-4">
+                <div class="card-info bg-light p-1 d-flex flex-column justify-content-center px-4">
+                    <h4 class="fw-bolder">Downtown</h4>
+                    <p class="fs-4 lh-1 p">Downtown,<br>Vancouver, BC</p>
+                    <a href="" class="fs-4 mt-">View langer map</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="container-info d-flex justify-content-center align-items-center gap-5">
+                <div class="card">
+                    <h3 class="h3">Hours</h3>
+                    <p>Open 7 days a week 12 to come</p>
+                </div>
+                <div class="card">
+                    <h3 class="h3">Location</h3>
+                    <p>1234 Street Name Vancouver, BC <br>604.123.1234</p>
+                </div>
+                <div class="card">
+                    <h3 class="reser h3">Reservations</h3>
+                    <p>For reservations please call<br>604.123.1234 24 hours notice requerid to cancel a reservation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <div class="col-lg-12 text-center d-flex flex-column align-items-center">
+                <h3 class="fw-bolder">CONTACTO</h3>
+                <br>
+                <br>
+                <p class="text-footer">Rua de Santa Maria, nº 253 / Funchal / 291.123.123</p>
+                <p class="text-footer">Horário: De 2ª a 6ª e Sábado das 09:00 às 14:00</p>
+                <br>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <br>
+                <p class="text-footer">&copy; 2017 Universidade da Madeira</p>
+            </div>
+        </div> 
+    </footer>
+    <div class="modal fade" tabindex="-1" role="dialog" id="reservationmodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title cor-principal">Reserva</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" arialabel="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" placeholder="Insira o nome do titular da reserva">
+                        </div>
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="text" class="form-control" placeholder="Insira a data pretendida">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{
+            margin: 0;
+            background:  #f8f9fa;
+        }
+        .public-banner{
+            background-image: url(google-map-background.png);
+            height: 500px;
+            background-position: center;
+            background-size: cover;
+        }
+        .cor-principal {
+            color: crimson;
+        }
+        h1 {
+            font-weight: 900;
+            height: 36px;
+            margin: 0;
+            line-height: 0.8;
+        }
+        section .container{
+            background-color: white;
+        }
+        .card-info{
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+            -webkit-box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+            -moz-box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+            margin-top: 50px;
+        }
+        a{
+            margin-top: 0;
+        }
+        .p{
+            margin-bottom: 0;
+            text-align: start
+        }
+        .card{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: transparent;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        p{
+            text-align: center;
+            font-size: x-large;
+            width: 220px;
+        }
+        .h3{
+            font-size: xx-large;
+            font-weight: bolder;
+            color: crimson;
+        }
+        footer {
+            color: white;
+        }
+        .footer{
+            padding: 0;
+        }
+        footer .container .col-lg-12{
+            background-color: maroon;
+            padding: 60px;
+        }
+        .social-media a {
+            padding: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: xx-large;
+        }
+
+    .social-media a:hover {
+        color: grey;
+    }
+    .text-footer{
+        font-size: medium;
+        text-align: start;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/99635f9b16.js" crossorigin="anonymous"></script>
+</body>
+</html>

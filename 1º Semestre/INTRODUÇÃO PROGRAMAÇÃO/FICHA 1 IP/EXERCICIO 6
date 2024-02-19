@@ -1,0 +1,20 @@
+#1 - Pedir ao utilizador para escrever um número de segundos
+
+x= int(input('Escreva a quantidade de segundos, x='))
+
+#2 - Conversões de dados
+
+Dias= (x // 86400) 
+Sobrante1= (x % 86400)  
+
+Horas= (Sobrante1 //3600) 
+Sobrante2= (Sobrante1 % 3600)
+
+Minutos= (Sobrante2 // 60)
+Sobrante3= (Sobrante2 % 60)
+
+
+
+#3 - Mostrar resultados
+
+print('Dias:',Dias, 'Horas:',Horas, 'Minutos:',Minutos, 'Segundos:',Sobrante3)

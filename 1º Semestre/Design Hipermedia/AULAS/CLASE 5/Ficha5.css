@@ -1,0 +1,55 @@
+html,body{
+    background-color: black;
+}
+main{
+    border: solid 3px greenyellow;
+    height: 430px;
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 30px;
+    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px; 
+    
+
+}
+article{
+    margin: 20px;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100%;
+    }
+.espaço{
+    padding: 40px 0;
+}
+button{
+    background-color: greenyellow;
+    width: 90px;
+    height: 30px;
+    
+}
+button:hover{
+    color: greenyellow;
+    background-color: black;
+    border: solid 2px greenyellow;
+
+}
+.imagem{
+    width: 150%;
+    height: 200%;
+    /* position: absolute;
+    bottom: 0; */
+    margin-bottom: 20px;
+}
+section{
+    display: flex;
+    margin-left: calc(50vw - (125px + 160px + 80px));
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+}

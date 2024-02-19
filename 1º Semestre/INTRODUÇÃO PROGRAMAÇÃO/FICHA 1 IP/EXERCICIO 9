@@ -1,0 +1,27 @@
+#1 - PEDIR 3 NUMEROS
+
+x= eval(input('Escreva o primeiro numero,x='))
+y= eval(input('Escreva o segundo numero,y='))
+z= eval(input('Escreva o terceiro número,z='))
+
+#2 - Escolher o maior
+
+if x > y and x >z:
+    print(x,'é o maior')
+
+elif y > x and y> z:
+    print( y, 'é o maior')
+    
+else: 
+    print(z, 'é o maior')
+    
+    
+
+    
+
+
+
+
+
+
+

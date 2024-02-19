@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>PROJETO 2</title>
+  </head>
+  <body>
+    <div class="container section1">
+      <header>
+         <div class="botões-header d-flex gap-4 align-items-center" id="navbarNavAltMarkup">
+              <nav class="navbar navbar-expand-md px-0 navbar-light w-100">
+                <div class="container d-flex justify-content-between overflow-hidden">
+                  <div class="animation-logo">
+                    <img src="/recursos/LOGOS/logo.png" alt="" class="logo-web animation5-img">
+                  </div>
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse gap-3" id="navbarNavAltMarkup">
+                    <ul class="main-nav-list navbar-nav ms-auto">
+                      <li class="nav-item"><a href="#Como-Funciona" class="nav-link header-link text-decoration-none px-4 py-2 mx-0">Como Funciona</a></li>
+                      <li class="nav-item"><a href="#Refeições" class="nav-link header-link text-decoration-none px-4 py-2 mx-0">Refeições</a></li>
+                      <li class="nav-item"><a href="#Testemunhos" class="nav-link header-link text-decoration-none px-4 py-2 mx-0">Testemunhos</a></li>
+                      <li class="nav-item"><a href="#Preço" class="nav-link header-link text-decoration-none preço px-4 mx-0 py-2">Preços</a></li>
+                      <li class="nav-item"><a href="#Promocao" class="margin"><button id="navbarNavAltMarkup" class="botao px-4 py-2" ><span id="text">Promoção</span></button></a></li>
+                      <li class="nav-item theme-mode"><form action="">
+                        <fieldset class="d-flex px-3 gap-2 align-items-center">
+                            <legend class="fs-6 mt-2 fw-bolder">Choose Theme:</legend>
+                            <label for="tema">Light</label>
+                            <input checked type="radio" name="tema" id="light-mode">
+                            &emsp;
+                            <label for="tema">Dark</label>
+                            <input type="radio" name="tema" id="dark-mode">
+                        </fieldset>
+                      </li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+          <div class="apresentacao mt-3 p-5 d-flex justify-content-between">
+            <div class="texto gap-5">
+                <h1 class="fw-bolder titulo1 mb-4">Uma refeição saudável, entregue à sua porta...</h1>
+                <p class="descricao fw-bold mb-5">Subscrição a um Plano de Refeições diário, todos os 365 dias do ano. Adaptado aos seus gostos pessoais e necessidades nutricionais</p>
+                <div class="container-botoes d-flex gap-3 mb-5">
+                  <a href="#Promocao"><button class="botao py-2 px-4">Refeição Grátis</button></a>
+                  <a href="#Como-Funciona"><button class="botao2 py-2 px-4">+Informações ↓</button></a>
+                </div>
+                <div class="container-img d-flex gap-3 pt-3">
+                  <div class="img-profile">
+                    <img src="/public/recursos/IMAGENES/customer-1.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                    <img src="/public/recursos/IMAGENES/customer-2.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                    <img src="/public/recursos/IMAGENES/customer-3.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                    <img src="/public/recursos/IMAGENES/customer-4.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                    <img src="/public/recursos/IMAGENES/customer-5.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                    <img src="/public/recursos/IMAGENES/customer-6.jpg" alt="" class="pessoa rounded-circle border-2 border border-white" width="50" height="50">
+                  </div>
+                  <div class="texto-status d-flex mt-2 gap-2 h-full">
+                    <p class="status fw-bolder">250,000+</p>
+                    <p class="status2 fw-bold texto-black">refeições servidas!</p>
+                  </div>
+                </div>
+            </div>
+            <div class="img-apresentacao">
+              <img src="/public/recursos/IMAGENES/hero.png" alt="" class="imagen-apresentacao">
+            </div>
+          </div>
+        </header>
+    </div>
+    <div class="container partners d-flex flex-column align-items-center pt-4 mb-5">
+      <p class="fw-bolder publicitado">Publicitado em</p>
+      <div class="imgs-partners">
+        <img src="/public/recursos/LOGOS/techcrunch.png" alt="" class="img-partner img-partner1">
+        <img src="/public/recursos/LOGOS/business-insider.png" alt="" class="img-partner img-partner2">
+        <img src="/public/recursos/LOGOS/the-new-york-times.png" alt="" class="img-partner img-partner3">
+        <img src="/public/recursos/LOGOS/forbes.png" alt="" class="img-partner img-partner4">
+        <img src="/public/recursos/LOGOS/usa-today.png" alt="" class="img-partner img-partner5">
+      </div>
+    </div>
+    <div class="container section2" id="Como-Funciona">
+      <p class="subtitle fw-bolder">COMO FUNCIONA</p>
+      <h1 class="fw-bolder titles">A sua refeição diária com 3 simples passos</h1>
+      <div class="pasos d-flex justify-content-between">
+        <div class="info-paso">
+          <h1 class="paso-numero fw-bolder">01</h1>
+          <h2 class="fw-bolder mb-4 titles mobile-config">Diga-nos o que gosta (e o que não gosta)</h2>
+          <p class="lh-5 info-paso-text">Nunca mais perca tempo a pensar no que comer! A UMa AI criará um plano de refeições semanais 100% personalizado apenas para si. Certifica-se de que obtém todos os nutrientes e vitaminas de que precisa, independentemente da dieta que siga!</p>
+        </div>
+        <div class="img-paso d-flex justify-content-center align-items-center">
+          <div class="circulo1 d-flex justify-content-center align-items-center">
+            <div class="circulo2 d-flex justify-content-center align-items-center">
+              <img src="/public/recursos/PREVIEW/app-screen-1.png" alt="" class="img-paso1 animation-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pasos d-flex flex-row-reverse justify-content-between">
+        <div class="info-paso">
+          <h1 class="paso-numero fw-bolder">02</h1>
+          <h2 class="fw-bolder mb-4 titles mobile-config">Aprove o seu plano de refeição semanal</h2>
+          <p class="lh-5 info-paso-text">Uma vez por semana, aprove o plano de refeições gerado pela UMa AI. Pode mudar de ingredientes, trocar refeições inteiras ou até adicionar as suas próprias receitas.</p>
+        </div>
+        <div class="img-paso d-flex justify-content-center align-items-center">
+          <div class="circulo1 d-flex justify-content-center align-items-center">
+            <div class="circulo2 d-flex justify-content-center align-items-center">
+              <img src="/public/recursos/PREVIEW/app-screen-2.png" alt="" class="img-paso1 animation-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pasos d-flex justify-content-between">
+        <div class="info-paso">
+          <h1 class="paso-numero fw-bolder">03</h1>
+          <h2 class="fw-bolder mb-4 titles mobile-config">Entrega de refeições no momento conveniente</h2>
+          <p class="lh-5 info-paso-text">Os melhores chefs da cidade vão cozinhar a sua refeição selecionada todos os dias, e vamos entregá-la à sua porta. Pode alterar o horário de entrega e endereço diariamente!</p>
+        </div>
+        <div class="img-paso d-flex justify-content-center align-items-center">
+          <div class="circulo1 d-flex justify-content-center align-items-center">
+            <div class="circulo2 d-flex justify-content-center align-items-center">
+              <img src="/public/recursos/PREVIEW/app-screen-3.png" alt="" class="img-paso1 animation-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container section3" id="Refeições">
+        <div class="container-subtitles d-flex flex-column align-items-center">
+          <p class="subtitle fw-bolder">REFEIÇÕES</p>
+          <h1 class="fw-bolder titles config">UMa AI dispõe de mais de 5,000 receitas</h1>
+        </div>
+        <div class="container-cards-options d-flex justify-content-center">
+          <div class="container-card d-flex">
+            <div id="app" class="container cards-margin"></div>
+        </div>
+          <div class="container-options">
+            <h2 class="fw-bolder mb-4 titles">Opções:</h2>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegetariana</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegan</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Mediterrânica</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Gluten</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Lactose</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Keto</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegetariana</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegan</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Mediterrânica</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Gluten</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Lactose</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Keto</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegetariana</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegan</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Mediterrânica</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Gluten</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Lactose</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Keto</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegetariana</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Vegan</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Mediterrânica</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Gluten</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Lactose</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Keto</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Gluten</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Sem Lactose</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Keto</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Paleo</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Low FODMAP</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Apropriada a caloiros</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container section4 " id="Testemunhos">
+      <p class="subtitle fw-bolder px-5 pt-5 pad-testemunho">TESTEMUNHOS</p>
+      <div class="information-gallery py-5 ps-5 pe-2 d-flex align-items-center justify-content-between pad-testemunho">
+        <div class="container-testemunhos w-50">
+          <h1 class="fw-bolder title-testemunhos titles">Uma vez que experimente, não consegue voltar atrás.</h1>
+          <div class="cards-testemunhos pb-5">
+            <div class="card-testemunho">
+              <img src="/public/recursos/IMAGENES/dave.jpg" alt="" class="img-testemunho">
+              <p>Refeições baratas, saudáveis e saborosas, sem sequer ter de encomendar manualmente os ingredientes!</p>
+              <p class="nome">— João Sousa</p>
+            </div>
+            <div class="card-testemunho">
+              <img src="/public/recursos/IMAGENES/ben.jpg" alt="" class="img-testemunho">
+              <p>The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!</p>
+              <p class="nome">— Ben Hadley</p>
+            </div>
+            <div class="card-testemunho">
+              <img src="/public/recursos/IMAGENES/steve.jpg" alt="" class="img-testemunho">
+              <p>È un salvavita! Ho appena avviato un'azienda, quindi non c'è tempo per cucinare. Non potrei vivere senza i miei pasti quotidiani ora!</p>
+              <p class="nome">— Mario Mozarella</p>
+            </div>
+            <div class="card-testemunho">
+              <img src="/public/recursos/IMAGENES/hannah.jpg" alt="" class="img-testemunho">
+              <p>Tenho um plano destes para toda a família!!! Além disso, tudo é orgânico e vegan e livre de plásticos.</p>
+              <p class="nome">— Hannah Smith</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="/public/recursos/IMAGENES/gallery-1.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-2.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-3.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-4.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-5.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-6.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-7.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-8.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-9.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-10.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-11.jpg" alt="" class="gallery-image animation3-img">
+          <img src="/public/recursos/IMAGENES/gallery-12.jpg" alt="" class="gallery-image animation3-img">
+        </div>
+      </div>
+    </div>
+    <div class="container section5" id="Preço">
+      <p class="subtitle fw-bolder px-5 pad-config">PREÇOS</p>
+      <h1 class="fw-bolder px-5 titles pad-config">Refeições económicas mas de qualidade</h1>
+      <div class="plans d-flex justify-content-center align-items-center mt-5">
+        <div class="card-plan d-flex flex-column align-items-center justify-content-center py-5">
+          <p class="subtitle-preços fw-bolder">CALOIRO</p>
+          <h1 class="fw-bolder texto-black">€199</h1>
+          <p class="preço-extra mb-5 texto-black">por mês. São só 7 euros por refeição!</p>
+          <div class="vantagens mb-5">
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">1 refeição por dia</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Servidas das 11h às 22h</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Entregas Grátis</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-x"></i></i></a>
+            </div>
+          </div>
+          <button class="botao py-2 px-4 fw-bolder fs-5">Vamos lá...</button>
+        </div>
+        <div class="card-plan card-plan2 d-flex flex-column align-items-center justify-content-center py-5">
+          <p class="subtitle-preços fw-bolder">VETERANO</p>
+          <h1 class="fw-bolder texto-black">€349</h1>
+          <p class="preço-extra mb-5 texto-black">por mês. São só 5 euros por refeição!</p>
+          <div class="vantagens mb-5">
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">2 refeições por dia</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Servidas 24/7</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black">Entregas Grátis</p>
+            </div>
+            <div class="option">
+              <a href=""><i class="fa-solid fa-check"></i></a>
+              <p class="texto-black non-push">Prioridade nas novas receitas</p>
+            </div>
+          </div>
+          <button class="botao py-2 px-4 fw-bolder fs-5">Começar já...</button>
+        </div>
+      </div>
+      <div class="quality">
+        <div class="card-quality card-quality1 animation4-img">
+          <div class="img-quality mb-4"><i class="fa-solid fa-users"></i></div>
+          <h5 class="fw-bolder titles">Sempre à diposição</h5>
+          <p class="paragrafo-quality texto-black">As nossas assinaturas cobrem 365 dias por ano, incluindo feriados importantes.</p>
+        </div>
+        <div class="card-quality card-quality2 animation4-img">
+          <div class="img-quality mb-4"><i class="fa-solid fa-seedling"></i></div>
+          <h5 class="fw-bolder titles">Local e orgânico</h5>
+          <p class="paragrafo-quality texto-black">Os nossos cozinheiros só utilizam produtos locais, frescos e orgânicos para preparar as suas refeições.</p>
+        </div>
+        <div class="card-quality card-quality3 animation4-img">
+          <div class="img-quality mb-4"><i class="fa-solid fa-drumstick-bite"></i></div>
+          <h5 class="fw-bolder titles">Sem desperdícios</h5>
+          <p class="paragrafo-quality texto-black">Todos os nossos parceiros só usam recipientes reutilizáveis para embalar todos as suas refeições.</p>
+        </div>
+        <div class="card-quality card-quality4 animation4-img">
+          <div class="img-quality mb-4"><i class="fa-solid fa-chart-simple"></i></div>
+          <h5 class="fw-bolder titles">Interrupções</h5>
+          <p class="paragrafo-quality texto-black">Vai de férias? Basta fazer uma pausa na sua subscrição e nós reembolsamos.</p>
+        </div>
+      </div>
+      <div class="promocao-card d-flex" id="Promocao">
+        <div class="promocao-data">
+          <h1 class="titulo-promocao mb-4">A primeira refeição é grátis!</h1>
+          <p class="text-start lh-5 mb-4 paragrafo-promocao">Refeições saudáveis e saborosas estão à sua espera. Comece a comer bem já hoje. Pode cancelar ou fazer uma pausa a qualquer momento. E a primeira refeição é por nossa conta!</p>
+          <div class="container-forms">
+            <div class="inputs input1">
+              <p class="fw-bolder">Nome completo</p>
+              <input type="text" placeholder="Miguel Peñaranda" class="promocao-input">
+            </div>
+            <div class="inputs input2">
+              <p class="fw-bolder">Email</p>
+              <input type="text" placeholder="example@gmail.com" class="promocao-input">
+            </div>
+            <div class="inputs input3">
+              <p class="fw-bolder">Como soube das nossas refeições?</p>
+              <select name="" id="" class="promocao-input">
+                <option value="">Escolha uma das opções:</option>
+                <option value="friends">Família ou amigos</option>
+                <option value="youtube">YouTube</option>
+                <option value="podcast">Podcast</option>
+                <option value="ad">Facebook</option>
+                <option value="others">Outros</option>
+              </select>
+            </div>
+            <div class="inputs input4">
+              <input type="submit" value="Subscrever" class="promocao-input-submit fs-4">
+            </div>
+          </div>
+        </div>
+        <div class="img-promocao">
+          <img src="/public/recursos/IMAGENES/eating.jpg" alt="" class="img-bg">
+        </div>
+      </div>
+    </div>
+    <hr class="container space texto-black">
+    <div class="container section6" id="Footer">
+        <div class="footer">
+          <div class="cards-footer card-footer1 gap-4">
+            <div class="animation-logo2">
+              <img src="/public/recursos/LOGOS/logo.png" alt="" class="logo-footer animation6-img">
+            </div>
+            <nav>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </nav>
+            <p class="texto-small titles">Copyright © UMa 2023</p>
+          </div>
+          <div class="cards-footer card-footer2">
+            <h5 class="title-footer titles">Contatos</h5>
+            <p class="texto-black">Rua de Santa Maria, nº 253</p>
+            <p class="texto-black">291 201810<br>sasuma@sas.uma.pt</p>
+          </div>
+          <div class="cards-footer card-footer3">
+            <h5 class="title-footer titles">Utilizador</h5>
+            <nav>
+              <ul class="footer-nav">
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Criar conta</span></a></li>
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Sign in</span></a></li>
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">iOS app</span></a></li>
+                <li><a href="#" class="link-footer"><span class="texto-black">Android app</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cards-footer card-footer4">
+            <h5 class="title-footer titles">Restaurante</h5>
+            <nav>
+              <ul class="footer-nav">
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Acerca</span></a></li>
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Parceiros</span></a></li>
+                <li><a href="#" class="link-footer"><span class="texto-black">Ofertas de <br>emprego</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cards-footer card-footer5">
+            <h5 class="title-footer titles">Recursos</h5>
+            <nav>
+              <ul class="footer-nav">
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Receitas</span></a></li>
+                <li class="push"><a href="#" class="link-footer"><span class="texto-black">Helpdesk</span></a></li>
+                <li><a href="#" class="link-footer"><span class="texto-black">Política de<br>privacidade</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
+    
+    
+    
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/99635f9b16.js" crossorigin="anonymous"></script>
+  </body>
+</html>

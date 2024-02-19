@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>FICHA 6 - 2</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div >
+                <img src="logo.svg" alt="Fylo" class="Logo">
+            </div>
+            <nav class="botoes-nav">
+                <a href="" class="texto-header">Features</a>
+                <a href="" class="texto-header">Team</a>
+                <a href="#botao2" class="texto-header">Sign In</a>
+            </nav>
+        </header>
+        <section id="section-1">
+            <div class="container-info1">
+                <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1>
+                <p class="paragrafo-1">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers. </p>
+                <div class="container-input-botao">
+                    <input type="email" name="" id="input1" value="Enter your email...">
+                    <input type="button" value="Get Started" class="botao1">
+                </div>
+            </div>
+            <div class="container-forma"></div>
+            <div class="container-info2">
+                <div class="container-conteudo">
+                    <h1 class="h1-2"><strong>Stay productive, wherever you are</strong></h1>
+                    <p class="paragrafo-2">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+                    <p class="paragrafo-2">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+                    <nav class="nav-link">
+                        <a href="" class="link">See how Fylo works</a>
+                        <a href="" class="underline"><img src="icon-arrow.svg" alt="" width="20px" height="20px" class="icon-arrow"></a>
+                    </nav>
+                    <div class="card">
+                        <p class="paragrafo-3">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                        <div class="container-Kyle">
+                            <img src="avatar-testimonial.jpg" alt="Kyle Burton" height="50px" width="50px" class="img-Kyle">
+                            <div class="name">
+                                <p class="p1-name">Kyle Burton</p>
+                                <p class="p-name">Founder & CEO, Huddle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-footer1">
+                <div class="texto-footer1">
+                    <h1 class="h1-footer1">Get early access today</h1>
+                    <p class="paragrafo-4">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                </div>
+                <div class="input-footer">
+                    <input type="email" name="" id="botao2" value="email@example.com">
+                    <input type="button" value="Get Started For Free" class="botao2">
+                </div>
+            </div>
+            <div class="container-footer2">
+                <img src="logo.svg" alt="" class="logo2">
+                <div class="container-footer-info">
+                    <div class="container-logo-footer2">
+                        <div class="phone">
+                            <img src="icon-phone.svg" alt="" class="icon-phone" width="20px" height="20px">
+                            <p>Phone: +1-543-123-4567</p>
+                        </div>
+                        <div class="email">
+                            <img src="icon-email.svg" alt="" class="icon-email">
+                            <p>example@fylo.com</p>
+                        </div>
+                    </div>
+                    <div class="links-footer">
+                        <div>
+                            <nav  class="links1-footer">
+                                <a href="" class="link-footer">About Us</a>
+                                <a href="" class="link-footer">Jobs</a>
+                                <a href="" class="link-footer">Press</a>
+                                <a href="" class="link-footer">Blog</a>
+                            </nav>
+                        </div>
+                        <div>
+                            <nav class="links2-footer">
+                                <a href="" class="link-footer">Contact Us</a>
+                                <a href="" class="link-footer">Terms</a>
+                                <a href="" class="link-footer">Privacy</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="" class="font"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="font"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="font"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <style>
+        html{
+            font-family:'Raleway';
+            background-color: rgb(213, 222, 230);
+        }
+        body{
+            margin:0;
+            background-color: white
+        }
+        header{
+            font-family: 'Open Sans';
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+        }
+        .Logo{
+            padding: 20px;
+        }
+        .botoes-nav{
+            display: flex;
+            justify-content: space-between;
+            width: 255px;
+            padding: 50px;
+        }
+        .texto-header{
+            text-decoration: none;
+            color: hsl(243, 87%, 12%);
+            transition: 0.4s;
+        }
+        .texto-header:checked{
+            transition: 0.4s;
+        }
+        .texto-header:hover{
+            color: orange;
+        }
+        #section-1{
+            background-image: url(illustration-1.svg);
+            background-position: bottom 90% left 90%;
+            background-size:35%;
+            background-repeat: no-repeat; 
+        }
+        .container-info1{
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            padding: 30px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight:200px;
+            margin-bottom: 0;
+            width: 720px;
+        }
+        .paragrafo-1{
+            width: 700px;
+            text-align: justify;
+        }
+        #input1{
+            height: 40px;
+            width: 400px;
+            padding-left: 30px;
+            color: rgba(151, 151, 151, 0.48);
+            border: solid black 1.3px;
+        }
+        .botao1{
+            width: 230px;
+            height: 45px;
+            background-color: hsl(224, 93%, 58%);
+            color: white;
+            font-weight: bold;
+            border: hsl(224, 93%, 58%);
+        }
+        .botao1:hover{
+            background-color: hsl(224, 100%, 48%);
+            cursor: pointer;
+        }
+        .container-input-botao{
+            width: 680px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-info2{
+            height: 680px;
+            margin-top: 0;
+            background-color: #F8F8FD;
+            background-image: url(illustration-2.svg);
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: center left 92%;
+            padding: 30px;
+        }
+        .container-forma{
+            background-image: url(bg-curve-desktop.svg);
+            height: 90px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin-top: 200px;
+            margin-bottom:0;
+        }
+        .container-conteudo{
+            width: 850px;
+            height: 560px;
+            padding: 30px;
+        }
+        .h1-2{
+            width: 800px;
+            margin-bottom: 35px;
+        }
+        .paragrafo-2{
+            width: 610px;
+        }
+        .nav-link{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 173px;
+            border-bottom: #8d9f8d solid;
+        }
+        .icon-arrow{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .link{
+            color: #8d9f8d;
+            text-decoration: none;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .card{
+            border-radius: 3%;
+            margin-top: 20px;
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(icon-quotes.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: left 5% top 10%;
+            box-shadow: 0px 0px 10px gray;
+        }
+        .paragrafo-3{
+            line-height: 30px;
+        }
+        .container-Kyle{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+        }
+        .p1-name{
+            margin-bottom: 3px;
+            font-size: medium;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .p-name{
+            margin-top: 0;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img-Kyle{
+            border-radius: 100%;
+        }
+        .container-footer1{
+            height: 350px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: hsl(238, 22%, 44%);
+        }
+        .paragrafo-4{
+            width: 550px;
+            line-height: 25px;
+            color: white;
+        }
+        .h1-footer1{
+            font-size: 40px;
+            color: white;
+        }
+        .input-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        #botao2{
+            height: 40px;
+            width: 500px;
+            color:rgba(151, 151, 151, 0.48);
+            padding-left: 30px;
+        }
+        .botao2{
+            height: 40px;
+            color: white;
+            background-color: blueviolet;
+            border: blueviolet;
+            box-shadow: 0px 1px 5px black;
+            width: 210px;
+        }
+        .botao2:hover{
+            background-color: rgb(117, 0, 226);
+            cursor: pointer;
+        }
+        .container-footer2{
+            background-color: hsl(243, 87%, 12%);
+            color: white;
+            height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 40px;
+        }
+        .logo2{
+            height: 60px;
+            width: 180px;
+            margin-bottom: 15px;
+        }
+        .container-footer-info{
+            display: flex;
+            gap: 200px;
+        }
+        .phone{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .email{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .links-footer{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            height: 200px;
+        }
+        .links1-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .links2-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .link-footer{
+            color: white;
+            text-decoration: none;
+            font-size: medium;
+        }
+        .link-footer:hover{
+            color: orange;
+        }
+        .fa-brands{
+            font-size: xx-large;
+        }
+
+        .social-media{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            width: 180px;
+        }
+        .font{
+            color: white;
+        }
+        .font:hover{
+            color: orange;
+        }
+        .logo2{
+            filter: brightness(0) invert();
+        }
+        
+        @media (width < 700px) {
+            body{
+                width: auto;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .Logo{
+            width: 100px;
+            height: 30px;
+            padding: 20px;
+            margin-right: 30px;
+            }
+            .botoes-nav{
+            width: 255px;
+            padding: 20px;
+            }
+            .texto-header{
+                font-size: small;
+            }
+            #section-1{
+            margin-top: 100px;
+            background-position: top;
+            background-size:90%;
+        }
+        .container-info1{
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: auto;
+        }
+        h1{
+            font-size: 20px;
+            width: 260px;
+            text-align: center;
+        }
+        .paragrafo-1{
+            font-size: small;
+            width: 260px;
+            text-align: center;
+        }
+        #input1{
+            height: 35px;
+            width: 230px;
+        }
+        .botao1{
+            width: 265px;
+            height: 35px;
+        }
+        .container-input-botao{
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container-info2{
+            background-color: #F8F8FD;
+            background-size: 80%;
+            background-position: top;
+            margin-top: 0;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .container-forma{
+            margin-top: 40px;
+            width: auto;
+            height: 70px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            margin-bottom:0;
+        }
+        .container-conteudo{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .h1-2{
+            width: 350px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .paragrafo-2{
+            width:400px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .nav-link{
+            font-size: 14px;
+            margin: 15px;
+            width: 151px;
+        }
+        .card{
+            width: 350px;
+            height: 200px;
+            background-position: left 6% top 10%;
+        }
+        .paragrafo-3{
+            margin-top: 0;
+            line-height: 20px;
+            font-size: small;
+            height: 130px;
+            align-items: center;
+            display: flex;
+        }
+        .p1-name{
+            margin-bottom: 1px;
+            font-size: smaller;
+        }
+        .p-name{
+            font-size: smaller;
+        }
+        .texto-footer1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-footer1{
+            height: 350px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .paragrafo-4{
+            width: 430px;
+            line-height: 25px;
+            text-align: center;
+            font-size: small;
+        }
+        .h1-footer1{
+            font-size: 22px;
+            color: white;
+        }
+        #botao2{
+            height: 35px;
+            width: 280px;
+        }
+        .botao2{
+            height: 35px;
+            width: 316px;
+        }
+        .container-footer2{
+            height: auto;
+            width: auto;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+        .container-footer-info{
+            display: flex;
+            flex-direction: column;
+        }
+        .links-footer{
+            width: auto;
+            flex-direction: column;
+            height: 400px;
+            margin-top: -100px;
+        }
+        .links1-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .links2-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .link-footer{
+            font-size: large;
+        }
+        .social-media{
+            justify-content: center;
+            gap: 30px;
+            width:auto;
+            padding-bottom: 40px;
+        }
+        .fa-brands{
+            font-size: 50px;
+        }
+        }
+</style>
+     <script src="https://kit.fontawesome.com/99635f9b16.js" crossorigin="anonymous"></script>
+</body>
+</html>

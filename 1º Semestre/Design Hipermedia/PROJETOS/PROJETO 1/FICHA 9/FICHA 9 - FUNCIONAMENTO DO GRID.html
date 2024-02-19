@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA 9 - GRID</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">Header</div>
+        <div class="item item-2">Small box 1</div>
+        <div class="item item-3">Small box 2</div>
+        <div class="item item-4">Small box 3</div>
+        <div class="item item-5">Main content</div>
+        <div class="item item-6">Slidebar</div>
+        <div class="item item-7">Footer</div>
+    </div>
+    <style>
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .container{
+            width: 1000px;
+            margin: 30px auto;
+            background-color: #eee;
+            display: grid;
+            grid-template-rows: 100px 200px 400px 100px;
+            grid-template-columns: auto auto auto auto;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        .item{
+            color: white;
+            font-size: 31px;
+            padding: 19px;
+        }
+        .item-1{
+            background-color: orangered;
+            grid-column: 1/-1;
+        }
+        .item-2{
+            background-color: orangered;
+            grid-column: 1/2;
+        }
+        .item-3{
+            background-color: orangered;
+            grid-column: 2/3;
+        }
+        .item-4{
+            background-color: orangered;
+            grid-column: 3/4;
+        }
+        .item-5{
+            background-color:orangered;
+            grid-column: 1/4
+        }
+        .item-6{
+            background-color: orangered;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .item-7{
+            background-color: orangered;
+            grid-column: 1/-1;
+            grid-row: 4/5;
+        }
+    </style>
+</body>
+</html>

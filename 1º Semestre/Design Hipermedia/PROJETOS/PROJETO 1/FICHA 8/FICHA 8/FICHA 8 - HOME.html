@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>FICHA 8 - HOME</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light px-0">
+                <div class="container">
+                    <a href="" class="navbar-brand">
+                        <h1>
+                            <span class="cor-principal">UMa</span>Cantina
+                        </h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="FICHA 8 - HOME.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="FICHA 8 - MENU.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="FICHA 8 - ACERCA.html" class="nav-link">Acerca</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item pe-3">
+                            <a href="FICHA 8 - CONTATO.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#reservationmodal">Reservas</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="public-banner text-light d-flex justify-content-end align-items-end px-4"><p class="fs-2 fw-bold bg-dark bg-opacity-75 px-4">Snack-Bar Esplanada Jardim</p></div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row d-none d-md-block">
+                    <div class="home-review col-12">
+                        <h3 class="text-center fw-bolder pt-5">Reviews</h3>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0" class="active"></li>
+                                    <li data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" class="active"></li>
+                                    <li data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2" class="active"></li>
+                                </ol>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://dummyimage.com/1000x300/ffffff/fff"
+                                        class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="box fw-bold">This is the best sandwich I've ever had! I
+                                            Highly recommend trying the chicken sandwich
+                                            for lunch.....</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://dummyimage.com/1000x300/ffffff/fff"
+                                        class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="box fw-bold">The desserts are to die for. Make sure you
+                                            save enough room after you eat your dinner.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://dummyimage.com/1000x300/ffffff/fff"
+                                        class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="box fw-bold">They have some of the best locally brewed
+                                            coffee I have ever tasted. So fresh and
+                                           eye opening early in the morning....</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row home-food d-none d-sm-block d-md-flex text-center p-4">
+                    <div class="col">
+                        <a href="FICHA 8 - MENU.html">
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1556744250%2Fthe-ultimate-veggie-sandwich-1905.jpg%3Fitok%3DrAOvFAhQ" alt="Food Feature 1">
+                        </a>
+                        <h5 class="my-3">Sandwiches</h5>
+                    </div>
+                    <div class="col">
+                        <a href="FICHA 8 - MENU.html">
+                            <img src="https://segredosdacomida.com.br/wp-content/uploads/2022/07/Sobremesa-para-domingo-1200x900.jpg" alt="Food Feature 2">
+                        </a>
+                        <h5 class="my-3">Sobremesas</h5>
+                    </div>
+                    <div class="col">
+                        <a href="FICHA 8 - MENU.html">
+                            <img src="https://www.receitasemenus.net/wp-content/uploads/2018/08/receitas-saladas.jpg" alt="Food Feature 3">
+                        </a>
+                        <h5 class="my-3">Saladas</h5>
+                    </div>
+                    <div class="col">
+                        <a href="FICHA 8 - MENU.html">
+                            <img src="https://s24937.pcdn.co/wp-content/uploads/2016/08/Caf%C3%A9-e-sa%C3%BAde_800_600.jpg.optimal.jpg" alt="Food Feature 4">
+                        </a>
+                        <h5 class="my-3">Café</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="home-about">
+                        <div class="col-lg-12">
+                            <br>
+                            <div class="text-center">
+                                <h3>Acerca da Cantina...</h3>
+                                <br>
+                                <div class="col-lg-6 offset-lg-3">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur cupiditate provident Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed quaerat veritatis eaque ab quam! Soluta odit veniam inventore rerum minus, necessitatibus quaerat dicta facere voluptatem aperiam maiores laborum numquam dolore explicabo nisi optio tempore at expedita. Rerum, veritatis optio, quos veniam repellat provident eos reiciendis ipsam possimus inventore quaerat?</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h3>UMa Cantina</h3>
+                <br>
+                <br>
+                <p>Rua de Santa Maria, nº 253 / Funchal / 291.123.123</p>
+                <p>Horário: De 2ª a 6ª e Sábado das 09:00 às 14:00</p>
+                <br>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <br>
+                <p>&copy; 2017 Universidade da Madeira</p>
+            </div>
+        </div> 
+    </footer>
+    <div class="modal fade" tabindex="-1" role="dialog" id="reservationmodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title cor-principal">Reserva</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" arialabel="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" placeholder="Insira o nome do titular da reserva">
+                        </div>
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="text" class="form-control" placeholder="Insira a data pretendida">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{
+            margin: 0;
+            background:  #f8f9fa;
+        }
+        .public-banner{
+            background-image: url(https://www.uma.pt/wp-content/themes/uma/images/sasuma/rest1a.jpg);
+            height: 225px;
+            background-position: center;
+            background-size: cover;
+        }
+        .cor-principal {
+            color: crimson;
+        }
+        h1 {
+            font-weight: 900;
+            height: 36px;
+            margin: 0;
+            line-height: 0.8;
+        }
+        section .container .col-lg-12{
+            background-color: white;
+        }
+        #carouselExampleIndicators{
+            color:black;
+            height: 210px;
+        }
+        #carouselExampleIndicators .carousel-indicators li{
+            background-color: rgba(220, 20, 60, 0.267);
+            
+        }
+        .carousel-indicators .active{
+            background-color: crimson;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            background-color: crimson;
+        }
+        .carousel-caption{
+            color: black;
+            top: 0;
+            padding: 60px 130px;
+        }
+        .box{
+            font-size: 20px;
+            margin-top: 30px;
+            color: rgb(147, 145, 145);
+        }
+        .home-food img {
+            border-radius: 100%;
+            max-width: 100%;
+            height: 250px;
+            width: 250px;
+        }
+        footer {
+            color: white;
+        }
+        footer .container .col-lg-12{
+            background-color: maroon;
+            padding: 60px;
+        }
+        .social-media a {
+            padding: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: xx-large;
+        }
+
+    .social-media a:hover {
+        color: grey;
+    }
+    </style>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/99635f9b16.js" crossorigin="anonymous"></script>
+</body>
+</html>

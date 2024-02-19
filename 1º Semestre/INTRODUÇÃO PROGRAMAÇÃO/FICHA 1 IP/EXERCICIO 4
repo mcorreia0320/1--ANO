@@ -1,0 +1,29 @@
+#1 - Mostrar mensagem
+
+print('Vou pedir-lhe valores de uma distância percorrida (em Km) e o tempo que tem para a percorrer (em minutos)')
+
+
+#2 - Ler dados
+
+a= eval(input('Distancia em Km, a='))
+b= eval(input('Tempo em minutos, b='))
+
+
+#3 - Conversões dos dados
+
+c= (b/60)
+d= (b*60)
+e= (a*1000)
+
+
+#4 - Calcular a velocidade media em Km/h e m/s
+
+f=(a/c)
+g=(e/d)
+
+
+
+#5 - Mostrar a resposta 
+
+print('a.',f,'Km/h')
+print('b.',g, 'm/s')

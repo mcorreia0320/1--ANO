@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(226, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: 10rem;
+}
+.texto{
+    opacity: 40%;
+    margin-top: 0.2rem;
+    padding: 10px;
+    font-size: small;
+}
+.titulo1{
+    font-size: xx-large;
+    margin-bottom: 0;
+    color: rgb(128, 102, 102);
+}
+.titulo2{
+    font-size: xx-large;
+    margin-top: 0.5rem;
+    color: rgb(95, 81, 81);
+    margin-bottom: 0;
+}
+.container-cards{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.card{
+    height: 150px;
+    width: 230px;
+    border-top: solid 3px;
+    padding: 1rem;
+    box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+    -moz-box-shadow: 2px 7px 5px 8px rgba(0,0,0,0.05);
+    border-radius: 3%;
+}
+.card1{
+    border-color: rgb(174, 136, 136);
+}
+.card2{
+    border-color: rgb(125, 125, 241);
+}
+.card3{
+    border-color: red;
+}
+.card4{
+    border-color: yellowgreen;
+}
+.card3,.card4{
+    margin: 20px;
+}
+.tittle-card{
+    color: rgb(95, 81, 81);
+    margin: 0;
+    padding-left: 10px;
+}
+.logo{
+    height: 3em;
+    width: 3em;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    object-fit: contain;
+}
+@media (max-width:600px){
+    .container-cards{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .texto-intro{
+        width: 250px;
+        line-height: 20px;
+    }
+    .texto{
+        font-size: small;
+    }
+    .intro{
+        width: 400px;
+    }
+}
+

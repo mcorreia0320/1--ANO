@@ -1,0 +1,85 @@
+main{
+    display: grid;
+    gap:1rem;
+    grid-template-areas:
+    "c1 c1 c2 c3"
+    "c4 c5 c5 c3" ;
+}
+.card{
+    font-family: "Barlow";
+    padding: 2rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.crd1{
+    color:white;
+    background-color: blueviolet;
+    background-image: url(./recomendacoes/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    grid-area: c1;
+}
+.crd2{
+    color: white;
+    background-color: grey;
+    grid-area: c2;
+}
+.crd3{
+    color: grey;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    grid-area: c3;
+}
+.crd4{
+    color: grey;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    grid-area: c4;
+    
+}
+.crd5{
+    color: white;
+    background-color: black;
+    grid-area: c5;
+}
+.card-header{
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    padding-bottom: 0.4rem;
+}
+.header-job{
+    font-size: .7rem;
+    opacity: 0.5;
+
+}
+.header-img{
+    width: 40px;
+    border-radius: 50%;
+    border: solid 3px rgba(255, 255, 255, 0.3)
+}
+.body-description{
+    font-size: 0.75rem;
+    line-height: 1.5;
+    opacity: 0.5;
+
+}
+@media (max-width: 750px){
+    main{
+    grid-template-areas:
+    "c1 c2" 
+    "c3 c4"
+    "c5 c5" ;
+    }
+}
+@media (width < 450px){
+    main{
+    grid-template-areas:
+    "c1" 
+    "c2" 
+    "c3"
+    "c4"
+    "c5" ;
+    }
+}

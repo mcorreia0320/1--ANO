@@ -1,0 +1,20 @@
+#1 - Mostrar mensagem 
+
+print('Vou pedir-lhe que me forneça um número inteiro que corresponda a segundos')
+
+#2 - Escrever dados
+
+x= int(input('Escreva um número em segundos, x='))
+
+#3 - Mostrar dados recolhidos
+
+print('?',x)
+
+#4 - Calcular o número de dias correspondes aos segundos fornecidos
+
+a= (x/86400)
+
+#5 - Mostrar os dias que corespondem
+
+print('O número de dias correspondentes é:',a)
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <h4>Horas em minutos:</h4>
+        <input type="number" v-model="horas" @keyup.enter="horasToMinutes(horas)">
+        <button type="submit" @click="horasToMinutes(horas)">Converter</button>
+        <p>{{ minutos }} minutos</p>
+        <br>
+        <br>
+        <h4>Minutos em segundos:</h4>
+        <input type="number" v-model="minutos_2" @keyup.enter="minuteToSeconds(minutos_2)">
+        <button type="submit" @click="minuteToSeconds(minutos_2)">Converter</button>
+        <p>{{ segundos }} segundos</p>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>app.mount('#app');</script>
+</body>
+</html>

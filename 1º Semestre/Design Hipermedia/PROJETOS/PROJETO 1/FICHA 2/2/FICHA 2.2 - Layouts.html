@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA2.2 - Layouts</title>
+</head>
+<body>
+    <h1>Inline-Block</h1>
+    <section id="inline-block">
+        <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non,
+            consequatur debitis eius doloremque dolor in voluptates labore. Vel provident laboriosam
+            ipsam eveniet deserunt repellat odio libero vero animi aut obcaecati quam, aspernatur
+            placeat excepturi similique pariatur odit. Nesciunt delectus sed dolorum quia officiis
+            nihil dicta deleniti eius magni ea.</div>
+        <div class="div1">Necessitatibus quisquam repellat ratione doloremque beatae voluptas</div>
+        <div class="div1">dignissimos velit nam aliquid, cumque tenetur vitae id at quaerat aut dolor
+            culpa nulla. A quia inventore dolorum id fugiat, iusto repellendus! Similique, obcaecati
+            eveniet excepturi quod, tempore ullam quos vel itaque incidunt
+            deleniti molestiae ipsam a? Non?</div>
+    </section>
+    <h1>Floats</h1>
+    <section id="Float" class="limpar-floats">
+        <div class="div2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit recusandae alias natus possimus quam ipsum harum, vitae earum ipsam!</div>
+        <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur eos voluptas at, officiis ratione quibusdam, enim suscipit mollitia id deleniti eum qui et sint voluptatum. Itaque voluptate, provident impedit facilis repudiandae nulla rerum veritatis dignissimos animi optio error at!</div>
+        <div class="div2">Lorem ipsum dolor sit amet.</div>
+    </section>
+    <h1>FlexBox</h1>
+    <section id="flexbox">
+        <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in laudantium ut officia. Labore esse sed tenetur ipsum explicabo repudiandae libero recusandae praesentium. Ipsum accusamus, pariatur reprehenderit numquam voluptatem accusantium voluptate dolores, labore nam maxime doloremque. Modi consequatur aliquid temporibus! Minima iure nam deserunt, dolore voluptates totam magnam incidunt nisi.</div>
+        <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis aut aliquam temporibus ratione. Delectus corporis iste eligendi exercitationem aut?</div>
+    </section>
+    <h1>Grid</h1>
+    <section id="grid">
+        <div class="um">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sequi eius officiis eum tempore hic?</div>
+        <div class="dois">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis sapiente amet culpa itaque quas perferendis quis explicabo, fugit dignissimos voluptatum aut. Esse nobis perspiciatis, dolorum quia quasi fuga pariatur?</div>
+    </section>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        div{
+            padding: 10px;
+            background-color: white;
+            border: solid 1px #ccc;
+        }
+        #inline-block .div1{
+            display: inline-block;
+            width: 30%;
+        }
+        #Float .div2{
+            width: 30%;
+        }
+        .limpar-floats{
+            clear: both;
+        }
+        #flexbox{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        #flexbox .div3{
+            flex: 1;
+            width: 30%;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 160px 100%;
+            gap: 5px;
+        }
+        .um{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }   
+        .dois{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            }
+        .tres{
+            grid-column: 3/4;
+            grid-row: 1/2;
+            }
+    </style>
+</body>
+</html>

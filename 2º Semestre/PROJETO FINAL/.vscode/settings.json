@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e059657d-19b9-43d8-9b86-c6600d75f1cc/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/backendProjectAPImj",
+    "appService.deploySubpath": "BACKEND - Jackline Camara e Miguel Peñaranda"
+}

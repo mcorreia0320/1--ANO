@@ -1,0 +1,14 @@
+#1 - pedir ao utilizador un numero base y veces a multiplicar
+
+base= eval(input('Escreva um nº base:'))
+
+veces= eval(input('Escrava o nº de veces a multiplicar a base:'))
+
+#2 - Calculo
+
+resultado = (base**veces)
+
+#3 - Mostrar solucao
+
+
+print('valor base:',base, 'e n:',veces,'é igual a:',resultado)
